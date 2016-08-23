@@ -1,0 +1,61 @@
+body {
+    background-color: #222222;
+    overflow-y: hidden;
+}
+
+.header {
+    position: fixed;
+    left: 35%;
+}
+
+
+.imageContainer {
+    position: relative;
+    display: inline-block;
+    margin:40px;
+    height: 900px;
+    white-space:nowrap;
+}
+
+
+.imageContainer:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 90%;
+}
+
+.image {
+    margin:auto 10px;
+    text-align: center;
+    vertical-align: middle;
+    max-height: 600px;
+    max-width: 600px;
+}
+
+.image:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
+.example-enter {
+    opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+.example-leave {
+    opacity: 1;
+}
+
+.example-leave.example-leave-active {
+    opacity: 0.01;
+    transition: opacity 1s ease-in;
+}
